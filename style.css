@@ -18,8 +18,7 @@ body{
 }
 .todo1{
     border: 3px solid #7469B6 !important;
-    background-color: #AD88C6;
-    
+    background-color: #AD88C6;  
 }
 .todo1::placeholder{
     color: white;
@@ -27,6 +26,9 @@ body{
     line-height: 21px;
     font-weight: 400;
     text-transform: capitalize;
+}
+.todo1:focus{
+    color: #AD88C6;
 }
 
 
