@@ -18,7 +18,9 @@ document.getElementById('btn-add').addEventListener('click',()=>{
 })
 document.getElementById('list').addEventListener('click',()=>{
     if(event.target.classList.contains('btn_remove')){
-        event.target.parentElement.parentElement.remove()
+       if(confirm('Are you sure you want to delete this note?')){
+        event.target.closest('li').remove()
+       }
     }
   
 })
